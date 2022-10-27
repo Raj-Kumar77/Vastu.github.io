@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+.menu-bar{
+    padding-top: 10px;
+    background: #000;
+    display: flex;
+    width: 100vw;
+    height: 6vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    z-index: 100;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 115px;
+    margin-right: 25px;
+    margin-top: 6px;
+    text-align: center;
+    list-style: none;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-menu-1{
+    display: none;
+}
+.sub-menu-1 ul li a{
+    color: black;
+    font-weight: 600;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    background: #f1f1f1;
+    color: black;
+    margin-top: 1px;
+    /* margin-left: -50px; */
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    /* margin-left: 28px; */
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    background: transparent;
+    text-align: center;
+    border-bottom: 1px dotted #000;
+    /* width: 80px; */
+    /* padding: 2px; */
+    border-radius: 0;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+    margin-bottom: 12px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: red;
+}
+
+
+/* underline effect */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #acca00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+
+  /* profile-setting */
+/* 
+.box-out1{
+    max-width: 500px;
+    width: 100%;
+    display: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 29px;
+    right: 62px;
+} */
+
+.coll1{
+    border-left: 1px solid #504d4d;
+    flex-basis: 70%;
+    /* width: 100%; */
+    /* margin-right: 170px; */
+    display: none;
+    padding: 18px;
+}
+
+.coll1 form{
+    display: flex;
+    margin-right: 169px;
+}
+
+.coll1 form input{
+    height: 24px;
+    /* border: none; */
+    margin-right: 5px;
+    border-bottom: 1px solid #a09e9e;
+    
+    /* outline: none; */
+}
+
+.coll1 span{
+    margin-right:30px;
+}
+
+.box-out{
+    display: none;
+    max-width: 500px;
+    /* border: 1px solid #504d4d; */
+    border-radius: 5px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 29px;
+    right: 62px;
+
+}
+
+.coll{
+    border-left: 1px solid #504d4d;
+    /* flex-basis: 70%; */
+    display: flex;
+    padding: 18px;
+}
+
+.coll form input{
+    width: 82%;
+    height: 24px;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid #a09e9e;
+    outline: none;
+}
+
+.coll form i{
+    margin: 14px;
+    width: 20px;
+    color: #504d4d;
+}
+
+.coll form img{
+    width: 29px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    margin-right: 13px;
+    margin-left: 7px;
+    margin-top: 6px;
+}
+
+.coll form button{
+    margin-left: 80%;
+    margin-top: 12px;
+    width: 60px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.coll form button:hover{
+    cursor: pointer;
+}
+
+.coll form .file{
+    height: 31px;
+}
+
+.area{
+    width: 82%;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid #a09e9e;
+    outline: none;
+}
+
+#area{
+    width: 82%;
+    height: 18px;
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid #a09e9e;
+    outline: none;
+    margin-top: 17px;
+    resize: vertical;
+}
+
+hr{
+    color: #504d4d;
+    margin: 0 !important;
+}
+
+/* left part */
+
+
+.base{
+    flex-basis: 150px;
+}
+
+.roww{
+    padding: 4px;
+}
+
+.roww span{
+    margin-left: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.roww i{
+    margin-left: 8px;
+    color: #504d4d;
+}

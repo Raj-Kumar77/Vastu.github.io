@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-container{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.form1{
+    height: 28rem;
+    width: 35rem;
+    box-sizing: border-box;
+    box-shadow: darkgrey 0px 0px 16px;
+    border-radius: 0.3rem;
+    margin-top: 15px;
+}
+.detail-container{
+    display: flex;
+    box-sizing: border-box;
+}
+.detail{
+    width: 100%;
+    height: 8%;
+    background: rgba(238, 234, 234, 0.404);
+    box-sizing: border-box;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+.detail h3{
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+    font-weight: 300;
+}
+.form-box1{
+    position: relative;
+    height: 100%;
+    width: 15rem;
+    box-sizing: border-box;
+}
+.form-box2{
+    position: relative;
+    height: 100%;
+    width: 30rem;
+    box-sizing: border-box;
+}
+.form-box1 li{
+    margin-top: 1.2em;
+    list-style: none;
+    margin-left: 0.5em;
+}
+.form-box2 input{
+    margin-top: 1em;
+    margin-left: 0.5em;
+    height: 2em;
+    width: 20rem;
+}
+.form-box2 select{
+    margin-top: 1em;
+    margin-left: 0.5em;
+    height: 2em;
+    width: 20rem;
+}
+#li-space{
+    margin-top:3.5rem; 
+}
+.adjustable{
+    margin-top: 1em;
+    margin-left: 0.5em;
+    height: 4em;
+    width: 20rem;
+    max-width: 20rem;
+    max-height: 10em;
+}
+.bottom{
+    width: 100%;
+    height: 12%;
+    background: rgba(238, 234, 234, 0.404);
+    box-sizing: border-box;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#line{
+    margin-top: 2.5rem;
+}
+.bottom button{
+    height: 30px;
+    width: 70px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: rgb(94, 92, 92) 0px 0px 8px; 
+    margin-right: 1rem;
+    margin-top: 7px;
+}
+.bottom button:hover{
+    cursor: pointer;
+    background-color: rgb(241, 233, 233);
+}
+.bottom button span{
+    color: blue;
+    font-weight: 600;
+}
+.form-box2 input:focus{
+    outline: none;
+    border: 1px solid aquamarine;
+    box-shadow: aqua 0px 0px 4px ;
+}
+.form-box2 textarea:focus{
+    outline: none;
+    border: 1px solid aquamarine;
+    box-shadow: aqua 0px 0px 5px ;
+}
+.form-box2 select:focus{
+    outline: none;
+    border: 1px solid aquamarine;
+    box-shadow: aqua 0px 0px 5px ;
+}
+.form-box1 span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form1 h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#star{
+    color: red;
+}

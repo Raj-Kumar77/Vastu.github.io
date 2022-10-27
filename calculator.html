@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        </nav>
+        <h2>Ayadi Calculator</h2>
+        <button id="print" class="btn" onclick="printDiv('he')">Print</button>
+        <button id="back" class="btn" onclick="goBack()">Back</button>
+        
+        <div class="container1">
+
+            <div class="container1-1">
+                <h4>Property Dimension</h4>
+                <hr>
+                <form action="">
+                    
+                <div class="form-container">
+                    <div class="number"> <span class="num" >Length Feet</span>
+                        <br><input type="number" min="0" name="" class="formbox" id="inp">
+                    </div>
+                    <div class="number"><span class="num">Breadth Feet</span>
+                        <br><input type="number"  min="0" name="" class="formbox" id="inp1">
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="number"><span class="num">1 Hasta Inch </span>
+                        <br><input type="number" placeholder="0" min="0" name="" class="formbox" id="">
+                    </div>
+                    <div class="number option-sel">
+                        <span class="num"> Unit </span> <br>
+                        <select name="option" class="formbox" id="">
+                            <option value="">Option1</option>
+                            <option value="2">Option2</option>
+                            <option value="3">Option3</option>
+                            <option value="4">Option4</option>
+                            <option value="5">Option5</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                    <div class="checkbox">
+                        <div class="checkbox1">
+                          <div class="check">  <input class="checkbo" type="checkbox" checked ><span class="box">Aaya</span> </div>
+                          <div class="check">  <input class="checkbo" type="checkbox" checked> <span class="box">Amsha</span></div>
+                          <div class="check"> <input class="checkbo" type="checkbox" checked><span class="box">Tithi</span></div>
+                            <div class="check"> <input class="checkbo" type="checkbox" checked><span class="box">Vyaya</span></div>
+                        </div>
+                        <div class="checkbox2">
+                            <div class="check"> <input type="checkbox" checked><span class="box">Vaara</span></div>
+                            <div class="check"> <input type="checkbox" checked><span class="box">Nakshatra</span></div>
+                             <div class="check"> <input type="checkbox" checked><span class="box">Aayu</span></div>
+                             <div class="check">  <input type="checkbox" checked><span class="box">Yoni</span></div>
+                        </div>
+                    </div>
+                  <div class="owner-nak">
+                    <span id="owner-nak">Owners Nakshatra </span><br>
+                  </div>
+                    
+
+                    <select name="option" id="Owner">
+                        <option value="text">Ashwini1</option>
+                        <option value="2">Option2</option>
+                        <option value="3">Option3</option>
+                        <option value="4">Option4</option>
+                        <option value="5">Option5</option>
+                    </select>
+                    <br>
+                    <div class="rbuttn">
+                    <div class="rbuttn1">
+                        <input class="rbutton" type="radio"><span class="num">Owners Report</span>
+                    </div>
+                    <div class="rbuttn2">
+                        <input class="rbutton" type="radio"><span class="num">Summry Report</span>
+                    </div>
+                    </div>
+                    <br>
+
+                    <button type="button" class="btn1" onclick="funct() ,show()"> Calculate </button>
+
+                </form>
+            </div>
+            <div id="printableArea" class="container1-2">
+                <h4 >Ayadi report will appear here</h4>
+                <div id="he" class="document">
+                    <p>The Aayadi calculation is a matrix of architecture and astrological calculations that are done to check the energy suitability of the plot and its relationship with the owner. It is made up of a set of six criteria: Aaya, Vyaya, Amsha, Nakshatra, Yoni and Vara-tithi, which are applied to dimensions of the building and its astrological associations. Apart from the above Aayadi Shadvarga (Aaya, Vyaya, Amsha, Nakshatra, Yoni and Vaar-tithi) criteria, there are some other criteria like Dravya, Rina, Yoga, Ayu, Vash Mandal and Tarabala which also help in assessing whether the specific qualities of a house are in harmony with the owner.</p>
+                    <br>Your property dimensions are: <br>
+                    Length: <span id="1">2</span> feet <br>
+                    Breadth: <span id="2">2</span> feet <br><br>
+                    Here is a summary of all the above given factors: <br>
+                    <table class="second" >
+                        <tr>
+                          <th>Name</th>
+                          <th>Remainder</th>
+                          <th>Result</th>
+                        </tr>
+                        <tr >
+                          <td class="first">AAYA</td>
+                          <td class="first"><span id="3">8</span></td>
+                          <td><span id="4">Enjoyes the good thing in life</span></td>
+                        </tr>
+                        <tr>
+                          <td>VYAYA</td>
+                          <td><span id="5">9</span></td>
+                          <td><span id="6">Has good friends</span></td>
+                        </tr>
+                        <tr>
+                          <td>YONI</td>
+                          <td ><span id="7">3</span></td>
+                          <td><span id="8">Good for weaponry, automobiles, drama hall temples</span></td>
+                        </tr>
+                        <tr>
+                          <td>TITHI</td>
+                          <td><span id="9">9</span></td>
+                          <td ><span id="10">Not favourable</span></td>
+                        </tr>
+                        <tr>
+                          <td>VARA</td>
+                          <td><span id="11">2</span></td>
+                          <td ><span id="12">Favourable</span></td>
+                        </tr>
+                        <tr>
+                          <td>NAKSHATRA</td>
+                          <td><span id="13">8</span></td>
+                          <td ><span id="14">Good</span></td>
+                        </tr>
+                        <tr>
+                          <td>AMSHA</td>
+                          <td><span id="15">4</span></td>
+                          <td ><span id="16">Blessed</span></td>
+                        </tr>
+                        <tr>
+                          <td>AAYU</td>
+                          <td><span id="17">27</span></td>
+                          <td ><span id="18">Your propety age is : 27</span></td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+     function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+    }
+
+    document.querySelector(".formbox").addEventListener("keypress", function (evt) {
+    if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+}
+);
+
+
+function funct(){
+    let x=document.getElementById("inp").value;
+    let z=document.getElementById("inp1").value;
+    let y=document.getElementById('he');
+    if((x=="0" && z=="0") || (x=="1" && z=="0") || (x=="0" && z=="1") || (!x && !z)){
+        y.style.display="none";
+        alert("Fields can't be empty,zero or negative")
+    }
+    else{
+        y.style.display="block";
+    }
+    
+
+}
+
+
+    </script>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

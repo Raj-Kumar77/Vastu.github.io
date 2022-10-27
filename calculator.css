@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+
+}
+input{
+    outline: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+.container1 {
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    /* max-width: 95%; */
+    padding: 10px;
+    /* margin: auto; */
+}
+.container1 h4{
+    text-align: center;
+    padding: 10px;
+}
+.container h2{
+    text-align: center;
+    padding-top: 8px;
+    color: blueviolet;
+    text-shadow: 1px 1px 4px gray;
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+/* .container1-1 div{
+    display: flex;
+} */
+.form-container{
+    display: flex;
+    /* margin-left: 4%; */
+
+}
+.number{
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 7%;
+}
+.formbox{
+    height: 25px;
+    width: 75%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px gray;
+}
+.num{
+    color: black;
+}
+.btn{
+    height: 25px;
+    width: 50px;
+    border: 1px solid blue;
+    background: ghostwhite;
+    border-radius: 4px;
+}
+.btn:hover{
+    cursor: pointer;
+   background: rgb(131, 131, 226);
+}
+#print{
+    position: absolute;
+    top: 8px;
+    right: 120px;
+    box-shadow: 2px 2px 5px gray;
+}
+#back{
+    position: absolute;
+    top: 8px;
+    right: 40px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.container1-1{
+    border: 1px solid gray;
+    flex-basis: 30%;
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    background-color: rgba(128, 128, 128, 0.103);
+    box-shadow: 2px 2px 5px rgb(104, 101, 101);
+}
+.container1-2{
+    flex-basis: 70%;
+    border: 1px solid gray;
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    background-color: rgba(128, 128, 128, 0.103);
+    box-shadow: 2px 2px 5px rgb(104, 101, 101);
+}
+.container1-2 h4{
+    text-align: center;
+}
+
+.checkbox{
+    display: flex;
+}
+input{
+    padding-left: 5%;
+}
+.box{
+    margin-left: 4px;
+}
+.checkbox1{
+    margin-top: 8px;
+    margin-left: 7%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.checkbox2{
+    margin-left: 16px;
+    margin-top: 8px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#owner-nak{
+    margin-left: 10%;
+    width: 100%;
+}
+.owner-nak{
+    margin-top: 15px;
+}
+#Owner{
+    height: 25px;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px rgb(104, 101, 101);
+}
+#Owner:focus{
+    border: 1px solid red;
+}
+.btn1{
+    height: 41px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top:0px ;
+    border: 1px solid rgb(88, 88, 223);
+    background: transparent;
+    border-radius: 8px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px rgb(104, 101, 101);
+}
+.btn1:hover{
+    cursor: pointer;
+    background: rgb(111, 111, 228);
+}
+.rbutton{
+  margin-left:10% ;
+  margin-top:15px ;
+  display: inline;
+  flex-direction: row;
+  width: 100%;
+}
+.check{
+    margin: 3px;
+}
+
+/* .option-sel {
+    margin: 50px;
+    width: 120px;
+    height: 34px;
+    border: 1px solid #111;
+    border-radius: 3px;
+    overflow: hidden;
+    background: url(https://stackoverflow.com/favicon.ico) 96% / 20% no-repeat #EEE;
+}
+
+.option-sel style{
+    background: transparent;
+    width: 150px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    height: 34px;
+} */
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 5%;
+}
+select:hover,select:focus{
+    outline: none;
+}
+input:hover{
+    outline: none;
+}
+select:focus{
+    border: 1px solid red;
+}
+input:focus{
+border: 1px solid red;
+box-shadow: 2px 2px 5px rgb(201, 221, 223);
+}
+select option{
+    padding-top: 20px;
+}
+
+.rbuttn{
+    display: flex;
+    width: 100%;
+}
+
+
+@media(max-width:700px){
+    
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+}
+
+
+.checkbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.checkbox1{
+    margin-top: 8px;
+    margin-left: 9%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox2{
+    margin-left: 16px;
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.container1-1{
+    border: 1px solid gray;
+    flex-basis: 30%;
+    height: 100%;
+    width: 30%;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px rgb(104, 101, 101);
+}
+.container1-2{
+    flex-basis: 70%;
+    border: 1px solid gray;
+    height: 100%;
+    width: 70%;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px rgb(104, 101, 101);
+    overflow: scroll;
+
+} */
+
+#owner-nak{
+    margin-left: 10%;
+    width: 100%;
+    font-size: 14px;
+}
+.rbuttn{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container h2{
+    text-align: left;
+    font-size: 17px;
+    margin-left: 10px;
+}
+}
+.rbuttn1{
+    display: flex;
+    width: 50%;
+    margin-top: 9px;
+    margin-right: 10%;
+}
+
+.rbuttn2{
+    display: flex;
+    width: 50%;
+    margin-top: 9px;
+    margin-right: 25%;
+}
+/* 
+#printableArea h4{
+    visibility: hidden;
+} */
+
+#he{
+    display: none;
+}
+
+
+
+.document{
+    display: flex;
+    margin-left: 2rem;
+    font-size: .8rem;
+    height: 100%;
+}
+
+.document p{
+    padding-right: 1rem;
+}
+
+/* table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 97%;
+    margin-bottom: 2rem;
+  }
+  
+  td, th {
+    border: 1px solid red;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .first{
+    margin-right: 5rem;
+  }
+/* table end */
